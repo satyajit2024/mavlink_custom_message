@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/path/to/generated')  # Adjust the path as needed
+sys.path.append('/home/satyajit/home/mavlink_custom_message/generated.py')  # Adjust the path as needed
 
 from pymavlink import mavutil
 import time
@@ -56,11 +56,11 @@ def send_another_custom_mavlink_message():
     master.mav.send(msg)
     print(f"ANOTHER_CUSTOM_COMMAND sent: {msg}")
 
-# while True:
-#     send_custom_mavlink_message()
-#     send_another_custom_mavlink_message()
-#     time.sleep(2)
+while True:
+    send_custom_mavlink_message()
+    send_another_custom_mavlink_message()
+    time.sleep(1)
 
 
-send_custom_mavlink_message()
-send_another_custom_mavlink_message()
+# send_custom_mavlink_message()
+# send_another_custom_mavlink_message()
