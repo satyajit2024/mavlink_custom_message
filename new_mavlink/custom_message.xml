@@ -1,4 +1,5 @@
 <mavlink>
+    <!-- <include>common.xml</include> -->
     <messages>
         <message id="180" name="MY_CUSTOM_COMMAND">
             <description>My custom MAVLink command</description>
