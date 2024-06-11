@@ -58,7 +58,7 @@ def send_another_custom_mavlink_message():
 
 while True:
     send_custom_mavlink_message()
-    send_another_custom_mavlink_message()
+    # send_another_custom_mavlink_message()
     time.sleep(1)
 
 
